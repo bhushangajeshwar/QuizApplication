@@ -16,7 +16,8 @@ public class Actionimpl implements Action{
 			registatiomimpl.DisplayRegistation();	
 			break;
 	    case 2:
-			
+			Loginimpl loginimpl = new Loginimpl();
+			loginimpl.DisplayLogin();
 			break;
 	    case 3:
 			
