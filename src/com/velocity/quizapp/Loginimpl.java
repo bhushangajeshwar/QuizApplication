@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Loginimpl implements Login {
 
 	@Override
-	public void DisplayLogin() {
+	public void displayLogin() {
 		System.out.println("Enter your username");
 		Scanner scanner = new Scanner(System.in);
 		String userName = scanner.next();

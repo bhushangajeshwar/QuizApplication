@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class Actionimpl implements Action{
 
 	@Override
-	public void Quiz() {
+	public void quiz() {
 		System.out.println("Welcome to Quiz based Application\n\n1. Student Registation \n2. Student Login \n3. Display the list of questions \n4. Store quiz result into database \n5. Display Quiz result");
 		System.out.println("Enter your choice");
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
 		switch (a) {
 		case 1:
-			Registatiomimpl registatiomimpl = new Registatiomimpl();
-			registatiomimpl.DisplayRegistation();	
+		UserRegistation ur = new UserRegistation();
+		ur.execute(7);
 			break;
 	    case 2:
 			Loginimpl loginimpl = new Loginimpl();
-			loginimpl.DisplayLogin();
+			loginimpl.displayLogin();
 			break;
 	    case 3:
 			
@@ -37,7 +37,7 @@ public class Actionimpl implements Action{
 	}
 	public static void main(String[] args) {
 		Actionimpl a = new Actionimpl();
-		a.Quiz();
+		a.quiz();
 	}
 
 }
